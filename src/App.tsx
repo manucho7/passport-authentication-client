@@ -7,17 +7,20 @@ import Login from './Pages/Login';
 import Profile from './Pages/Profile';
 
 import './main.css';
+import Context from './Pages/Context';
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Switch>
-        <Route path='/' exact component={Homepage} />
-        <Route path='/admin' component={AdminPage} />
-        <Route path='/login' component={Login} />
-        <Route path='/profile' component={Profile} />
-      </Switch>
+      <Context>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Homepage} />
+          <Route path='/admin' component={AdminPage} />
+          <Route path='/login' component={Login} />
+          <Route path='/profile' component={Profile} />
+        </Switch>
+      </Context>
     </BrowserRouter>
   );
 }
