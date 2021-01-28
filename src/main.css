@@ -1,0 +1,19 @@
+/*
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.NavContainer {
+    align-items: center;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 100vh;
+}
