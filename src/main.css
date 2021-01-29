@@ -11,9 +11,13 @@
 .NavContainer {
     align-items: center;
     background: black;
-    color: white;
     display: flex;
     justify-content: space-evenly;
     height: 100px;
-    width: 100vh;
+    width: 100vw;
+}
+
+.NavContainer a {
+    color: white;
+    text-decoration: none;
 }
