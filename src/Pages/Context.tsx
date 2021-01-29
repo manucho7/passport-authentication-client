@@ -5,7 +5,7 @@ export const MyContext = createContext<any>({});
 
 export default function Context(props: PropsWithChildren<any>) {
 
-  const [user, setUser] = useState<any>("");
+  const [user, setUser] = useState<any>();
 
   useEffect(() => {
     axios.get("http://localhost:4000/user", {
