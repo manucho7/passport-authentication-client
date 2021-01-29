@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { MyContext } from './Pages/Context';
 import Navbar from './Components/Navbar';
 import Homepage from './Pages/Homepage';
 import AdminPage from './Pages/AdminPage';
 import Login from './Pages/Login';
 import Profile from './Pages/Profile';
 import Register from './Pages/Register';
-import { MyContext } from './Pages/Context';
 
 import './main.css';
 
