@@ -16,6 +16,8 @@ export default function Login() {
       if (res.data === "Succesfully Authenticated") {
         window.location.href = "/";
       }
+    }, () => {
+        console.log("failure");
     })
   }
 
