@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { AxiosResponse } from 'axios';
 
 export default function Login() {
 
@@ -12,7 +13,7 @@ export default function Login() {
       password
     }, {
       withCredentials: true
-    }).then(res => {
+    }).then((res: AxiosResponse) => {
       if (res.data === "Succesfully Authenticated") {
         window.location.href = "/";
       }

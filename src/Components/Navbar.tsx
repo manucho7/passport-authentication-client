@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { MyContext } from '../Pages/Context';
+import { AxiosResponse } from 'axios';
 
 export default function Navbar() {
 
@@ -10,7 +11,7 @@ export default function Navbar() {
   const logout = () => {
     axios.get("http://localhost:4000/logout", {
       withCredentials: true
-    }).then((res) => {
+    }).then((res: AxiosResponse) => {
       if (res.data === "Successfully logged out") {
         window.location.href = "/";
       }
