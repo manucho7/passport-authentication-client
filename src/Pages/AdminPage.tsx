@@ -18,7 +18,7 @@ export default function AdminPage() {
         return item.username !== ctx.username
       }))
     })
-  }, [ctx.username])
+  }, [ctx])
 
   if (!data) {
     return null;
